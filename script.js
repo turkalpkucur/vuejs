@@ -1,23 +1,17 @@
-const app = Vue.createApp(
-    {
-        data() {
-            return {
-                firstGoal: 'Html',
-                secondGoal: 'Css',
-                website: 'https://www.turkalp.blog'
-            }
+const app = Vue.createApp({
+    data() {
+        return {
+            counter: 0,
+        };
+    },
+    methods: {
+        artir() {
+            this.counter += 1;
         },
-        methods: {
-            ourGoal(){
-                const randomNumber = Math.random();
-                if(randomNumber < 0.4){
-                    return this.firstGoal;
-                }else{
-                    return this.secondGoal;
-                }
-            },
+        azalt() {
+            this.counter -= 1;
         }
     }
-);
+});
 
 app.mount('#frontend');
