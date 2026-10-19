@@ -24,23 +24,24 @@
     <div id="frontend" class="frontend">
 
         <div class="row">
-            <div class="col-md-12 mt-5">
-                <button type="button" class="btn btn-success" @click="artir">ARTIR</button>
-            </div>
-            <div class="col-md-12 mt-5">
-                <button type="button" class="btn btn-primary button1" @click="azalt">AZALT</button>
+
+            <div class="col-3">
+                <input type="text" v-model="a" @input="topla" placeholder="ilk sayı">
             </div>
 
-            <div class="col-md-12 mt-5">
+            <div class="col-3">
+                <input type="text" v-model="b" @input="topla" placeholder="ikinci sayı">
+            </div>
 
-                <button type="button" class="btn btn-primary">
-                    SONUÇ :{{ counter }}<span class="badge badge-light"></span>
-                </button>
+
+            <div class="col-3">
+                <button>topla</button>
+            </div>
+
+            <div class="col-3">
+                <b>RESULT: {{ result }}</b>
             </div>
         </div>
-
-
-
     </div>
     <script src="script.js" defer></script>
 </body>

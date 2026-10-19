@@ -1,16 +1,13 @@
 const app = Vue.createApp({
     data() {
         return {
-            counter: 0,
+            result: 0,
         };
     },
     methods: {
-        artir() {
-            this.counter += 1;
-        },
-        azalt() {
-            this.counter -= 1;
-        }
+        topla() {
+             this.result= Math.sum(this.a, this.b);
+        } 
     }
 });
 
