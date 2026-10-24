@@ -1,14 +1,21 @@
-const app = Vue.createApp({
-    data() {
-        return {
-            result: 0,
-        };
-    },
-    methods: {
-        topla() {
-             this.result= Math.sum(this.a, this.b);
-        } 
+const app=Vue.createApp({
+data(){
+
+},
+watch:{
+
+},
+computed:{
+},
+methods:{
+    addNumbers(){
+        result.number=parseFloat(this.firstNumber)+parseFloat(this.secondNumber);
     }
+}
+
+
+
+
 });
 
-app.mount('#frontend');
+app.mount("#frontend");
